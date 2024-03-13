@@ -1,4 +1,4 @@
-local colors = require("mellow.colors").dark
+local colors = require("comf.colors").dark
 
 return {
   normal = {

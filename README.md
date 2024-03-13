@@ -1,4 +1,4 @@
-# Mellow
+# comf
 
 A soothing dark color scheme for neovim.
 
@@ -6,23 +6,23 @@ A soothing dark color scheme for neovim.
 
 ### Terminal (kitty)
 
-![Screenshot of mellow theme terminal](https://user-images.githubusercontent.com/1040966/196249241-173a1636-b74f-4767-b27f-2b3ed02cea26.png)
+![Screenshot of comf theme terminal](https://user-images.githubusercontent.com/1040966/196249241-173a1636-b74f-4767-b27f-2b3ed02cea26.png)
 
 ### JavaScript (JSX)
 
-![Screenshot of mellow theme JS/JSX](https://user-images.githubusercontent.com/1040966/196249265-d122fee2-b14f-4c80-9678-f949487755d4.png)
+![Screenshot of comf theme JS/JSX](https://user-images.githubusercontent.com/1040966/196249265-d122fee2-b14f-4c80-9678-f949487755d4.png)
 
 ### HTML
 
-![Screenshot of mellow theme HTML](https://user-images.githubusercontent.com/1040966/196249274-5846ea9e-cf02-4ec8-9bae-53b900539ee8.png)
+![Screenshot of comf theme HTML](https://user-images.githubusercontent.com/1040966/196249274-5846ea9e-cf02-4ec8-9bae-53b900539ee8.png)
 
 ### Clojure
 
-![Screenshot of mellow theme Clojure](https://user-images.githubusercontent.com/1040966/196249280-c68a6c20-18b8-4747-9a66-dac28e864457.png)
+![Screenshot of comf theme Clojure](https://user-images.githubusercontent.com/1040966/196249280-c68a6c20-18b8-4747-9a66-dac28e864457.png)
 
 ### Rust
 
-![Screenshot of mellow theme Rust](https://user-images.githubusercontent.com/1040966/196249282-20f2097a-1467-4365-9c99-4f7957e98aec.png)
+![Screenshot of comf theme Rust](https://user-images.githubusercontent.com/1040966/196249282-20f2097a-1467-4365-9c99-4f7957e98aec.png)
 
 ## Palette
 
@@ -62,65 +62,65 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'mellow-theme/mellow.nvim'
+Plug 'comf-theme/comf.nvim'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use("mellow-theme/mellow.nvim")
+use("comf-theme/comf.nvim")
 ```
 
 ## Usage
 
 ```lua
 -- Lua
-vim.cmd([[colorscheme mellow]])
+vim.cmd([[colorscheme comf]])
 ```
 
 ```vim
 " Vim Script
-colorscheme mellow
+colorscheme comf
 ```
 
 ## Configuration
 
-> Configuration needs to be set **BEFORE** loading the color scheme with `colorscheme mellow`
+> Configuration needs to be set **BEFORE** loading the color scheme with `colorscheme comf`
 
 | Option                    | Default | Description              |
 | ------------------------- | ------- | ------------------------ |
-| `mellow_italic_comments`  | `true`  | Make comments italic     |
-| `mellow_italic_keywords`  | `false` | Make keywords italic     |
-| `mellow_italic_booleans`  | `false` | Make booleans italic     |
-| `mellow_italic_functions` | `false` | Make functions italic    |
-| `mellow_italic_variables` | `false` | Make variables italic    |
-| `mellow_bold_comments`    | `false` | Make comments bold       |
-| `mellow_bold_keywords`    | `false` | Make keywords bold       |
-| `mellow_bold_booleans`    | `false` | Make booleans bold       |
-| `mellow_bold_functions`   | `false` | Make functions bold      |
-| `mellow_bold_variables`   | `false` | Make variables bold      |
-| `mellow_transparent`      | `false` | Disable background color |
+| `comf_italic_comments`  | `true`  | Make comments italic     |
+| `comf_italic_keywords`  | `false` | Make keywords italic     |
+| `comf_italic_booleans`  | `false` | Make booleans italic     |
+| `comf_italic_functions` | `false` | Make functions italic    |
+| `comf_italic_variables` | `false` | Make variables italic    |
+| `comf_bold_comments`    | `false` | Make comments bold       |
+| `comf_bold_keywords`    | `false` | Make keywords bold       |
+| `comf_bold_booleans`    | `false` | Make booleans bold       |
+| `comf_bold_functions`   | `false` | Make functions bold      |
+| `comf_bold_variables`   | `false` | Make variables bold      |
+| `comf_transparent`      | `false` | Disable background color |
 
 ```lua
 -- Example config in lua
 
 -- Configure the appearance
-vim.g.mellow_italic_functions = true
-vim.g.mellow_bold_functions = true
+vim.g.comf_italic_functions = true
+vim.g.comf_bold_functions = true
 
 -- Load the colorscheme
-vim.cmd([[colorscheme mellow]])
+vim.cmd([[colorscheme comf]])
 ```
 
 ```vim
 " Example config in vim script
 
 " Configure the appearance
-let g:mellow_italic_functions = 1
-let g:mellow_bold_functions = 1
+let g:comf_italic_functions = 1
+let g:comf_bold_functions = 1
 
 " Load the colorscheme
-colorscheme mellow
+colorscheme comf
 ```
 
 ## Extras
@@ -129,12 +129,12 @@ Color themes for various applications and terminal emulators.
 
 ### Terminals
 
-- alacritty - `extras/alacritty/mellow.toml`
-- kitty - `extras/kitty/mellow.conf`
-- wezterm - `extras/wezterm/colors/mellow.toml`
-- iterm2 - `extras/iterm2/mellow.itermcolors`
-- terminator - `extras/terminator/mellow.config`
-- foot - `extras/foot/mellow.ini`
+- alacritty - `extras/alacritty/comf.toml`
+- kitty - `extras/kitty/comf.conf`
+- wezterm - `extras/wezterm/colors/comf.toml`
+- iterm2 - `extras/iterm2/comf.itermcolors`
+- terminator - `extras/terminator/comf.config`
+- foot - `extras/foot/comf.ini`
 
 ### Helix
 
@@ -142,12 +142,12 @@ Color themes for various applications and terminal emulators.
 
 ### Visual Studio Code
 
-- Grab it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=kvrohit.mellow-theme).
-- (or) Search within VSCode extension page for "Mellow".
+- Grab it from the [marketplace](https://marketplace.visualstudio.com/items?itemName=kvrohit.comf-theme).
+- (or) Search within VSCode extension page for "comf".
 
 ### Eclipse
 
-- `extras/eclipse/mellow.xml`
+- `extras/eclipse/comf.xml`
 
 ### Delta
 

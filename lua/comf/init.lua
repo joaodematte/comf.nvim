@@ -1,5 +1,5 @@
-local variants = require("mellow.colors")
-local cfg = require("mellow.config").config
+local variants = require("comf.colors")
+local cfg = require("comf.config").config
 local c = variants[cfg.variant]
 local M = {}
 
@@ -374,7 +374,7 @@ M.colorscheme = function()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = "mellow"
+  vim.g.colors_name = "comf"
 
   set_terminal_colors()
   set_groups()

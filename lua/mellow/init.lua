@@ -89,7 +89,7 @@ local set_groups = function()
     ["Normal"] = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text
     ["NormalNC"] = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_dark }, -- normal text
     ["NormalFloat"] = { fg = c.white, bg = c.gray00 }, -- Normal text in floating windows.
-    ["FloatBorder"] = { fg = c.gray03, bg = c.bg }, -- Border of floating windows.
+    ["FloatBorder"] = { fg = c.blue, bg = c.bg }, -- Border of floating windows.
     ["Pmenu"] = { fg = c.white, bg = c.black }, -- Popup menu: normal item.
     ["PmenuSel"] = { fg = c.bright_white, bg = c.gray03 }, -- Popup menu: selected item.
     ["PmenuSbar"] = { bg = c.gray02 }, -- Popup menu: scrollbar.
@@ -345,15 +345,15 @@ local set_groups = function()
     ["NeoTreeTitleBar"] = { fg = c.gray05, bg = c.gray01 },
 
     -- Telescope
-    ["TelescopeBorder"] = { fg = c.bg, bg = c.bg },
+    ["TelescopeBorder"] = { fg = c.blue, bg = c.bg },
     ["TelescopeNormal"] = { fg = c.fg, bg = c.bg },
-    ["TelescopePreviewTitle"] = { fg = c.black, bg = c.green, bold = true },
-    ["TelescopeResultsTitle"] = { fg = c.bg, bg = c.bg },
-    ["TelescopePromptTitle"] = { fg = c.black, bg = c.cyan, bold = true },
-    ["TelescopePromptBorder"] = { fg = c.gray01, bg = c.gray01 },
-    ["TelescopePromptNormal"] = { fg = c.gray06, bg = c.gray01 },
-    ["TelescopePromptCounter"] = { fg = c.gray04, bg = c.gray01 },
-    ["TelescopeMatching"] = { fg = c.yellow, underline = true },
+    ["TelescopePreviewTitle"] = { fg = c.blue, bg = c.bg, bold = true },
+    ["TelescopeResultsTitle"] = { fg = c.blue, bg = c.bg, bold = true },
+    ["TelescopePromptTitle"] = { fg = c.blue, bg = c.bg, bold = true },
+    ["TelescopePromptBorder"] = { fg = c.blue, bg = c.bg },
+    ["TelescopePromptNormal"] = { fg = c.fg, bg = c.bg },
+    ["TelescopePromptCounter"] = { fg = c.gray04, bg = c.bg },
+    ["TelescopeMatching"] = { fg = c.yellow, underline = true, bold = true },
   }
 
   for name, val in pairs(highlights) do
